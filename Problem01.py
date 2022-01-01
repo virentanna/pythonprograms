@@ -1,3 +1,4 @@
+# Problem Statement : Balanced Parentheses Check
 def balance_check(str1):
     openb = ['[', '{', '(']
     closeb = [']', '}', ')']
