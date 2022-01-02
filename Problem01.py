@@ -3,6 +3,10 @@ def balance_check(str1):
     openb = ['[', '{', '(']
     closeb = [']', '}', ')']
 
+    # Return false if the number of parenthesis are Odd
+    if len(str1) != 0:
+        return False
+
     stack = []
     for s in str1:
         if s in openb:  # Push index of opening bracket to stack
