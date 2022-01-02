@@ -4,7 +4,7 @@ def balance_check(str1):
     closeb = [']', '}', ')']
 
     # Return false if the number of parenthesis are Odd
-    if len(str1) != 0:
+    if len(str1) % 2 != 0:
         return False
 
     stack = []
@@ -24,10 +24,10 @@ def balance_check(str1):
 
 # resp = balance_check('[](){([[[]]])}')
 # resp = balance_check('()(){]}')
-# resp = balance_check('[}')
+resp = balance_check('[]')
 # resp = balance_check('[](){([[[]]])}(')
 # resp = balance_check('[{{{(())}}}]((()))')
-resp = balance_check('[[[]])]')
+# resp = balance_check('[[[]]]')
 
 if resp:
     print("String is Balanced !!")
