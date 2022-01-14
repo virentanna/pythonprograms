@@ -2,12 +2,12 @@
 
 list1 = [1, 8, 3, 2, 9]
 
-firstindex = 0
-lastindex = len(list1) - 1
+first_index = 0
+last_index = len(list1) - 1
 
-while firstindex < lastindex:
-    list1[firstindex], list1[lastindex] = list1[lastindex], list1[firstindex]
-    firstindex += 1
-    lastindex -= 1
+while first_index < last_index:
+    list1[first_index], list1[last_index] = list1[last_index], list1[first_index]
+    first_index += 1
+    last_index -= 1
 
 print(list1)
