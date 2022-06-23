@@ -8,5 +8,13 @@ def Finder(arr1,arr2):
         if d[num] == 0:
             print(num,end=" ")
 
+def Finder01(arr1,arr2):
+    result = 0
+
+    for num in arr1+arr2:
+        result ^= num
+
+    return result
+
 if __name__ == '__main__':
-    Finder([1,2,3,4,5,6,7],[3,7,2,1,4])
+    Finder01([1,2,3,4,5,6,7],[3,7,2,1,4])
