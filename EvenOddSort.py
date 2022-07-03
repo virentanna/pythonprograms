@@ -2,8 +2,6 @@
 
 # Algorithm : If we get an odd number, pop it and append it to the list
 def EvenOddSort(arr):
-
-
     idx = 0
     length = len(arr)
     while idx < length:

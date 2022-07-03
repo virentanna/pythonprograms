@@ -16,8 +16,19 @@ def strCompress(s):
 
     return ''.join(final)
 
+# Following function will convert AAAABBBCCCC string to ABC.... basically removes the duplicate chars
+def strCompress02(s):
+    final=[]
+
+    for char in s:
+        if len(final)==0 or final[-1] != char:
+            final.append(char)
+
+    return ''.join(final)
+
 if __name__ == '__main__':
-    print(strCompress('    '))
-    # print('AABBCC' + '---->' + strCompress('AABBCC'))
+    # print(strCompress('    '))
+    print('ABBCCCCD --->' + strCompress02('ABBCCCCD'))
+    # print('AABBCC' + '---->  + strCompress('AABBCC'))
     # print('AAABCCDDDDD' + '---->' + strCompress('AAABCCDDDDD'))
-    print('AAAaaaBCCddDDDDD' + '---->' + strCompress('AAAaaaBCCddDDDDD'))
+    # print('AAAaaaBCCddDDDDD' + '---->' + strCompress('AAAaaaBCCddDDDDD'))

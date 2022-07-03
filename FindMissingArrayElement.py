@@ -1,6 +1,7 @@
 import collections
 def Finder(arr1,arr2):
     d=collections.defaultdict(int)
+
     for num in arr2:
        d[num] += 1
 

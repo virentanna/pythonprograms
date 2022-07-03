@@ -1,7 +1,7 @@
 # Program to find the factorial of a given number
 
 def factorial(num):
-    if (num == 0) or (num < -1):
+    if (num <= 0):
         return "Enter Valid number..."
 
     fact = 1

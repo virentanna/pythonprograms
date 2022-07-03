@@ -9,6 +9,17 @@ def ArrayPair_Sum(arr,k):
             if (num,k-num) not in sol:
                 sol.append((num,k-num))
     print(sol)
+def ArrayPair_Sum01(arr,k):
+    if len(arr) < 2:
+        print("Array size is less than 2...")
+        return
+
+    sol = set()
+    for idx,num in enumerate(arr):
+        if k - num in arr[idx+1:]:
+            sol.add((num,k-num))
+    print(sol)
+    # print('\n'.join(map(str, list(sol))))
 
 
 def pair_sum(arr, k):
@@ -36,8 +47,10 @@ def pair_sum(arr, k):
     # FOR TESTING
     # return len(output)
     # Nice one-liner for printing output
-    print('\n'.join(map(str,list(output))))
-
+    # print('\n'.join(map(str,list(output))))
+    print(output)
 if __name__ == '__main__':
-    ArrayPair_Sum([1,3,2,2,6,4,5],7)
+    pair_sum([1,3,2,2,6,4,5],7)
+
+    ArrayPair_Sum01([1, 3, 2, 2, 6, 4, 5], 7)
     # pair_sum([1, 3, 2, 2, 6, 4, 5], 7)
