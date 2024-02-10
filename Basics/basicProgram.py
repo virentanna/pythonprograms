@@ -1,0 +1,1 @@
+print("Hello, This is a basic python scrip written in Basics folder of PySpark Branch")
